@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="711.0" prefWidth="1800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proj.projetjava.HomeController">
+   <children>
+      <BorderPane fx:id="mainPane" layoutX="83.0" layoutY="43.333333333333336" prefHeight="689.0" prefWidth="1800.0" style="-fx-background-color: #D5DEEF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="657.0" prefWidth="244.0" styleClass="left_from" stylesheets="@style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="132.0" fitWidth="171.0" layoutX="53.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: #ffb705;">
+                     <image>
+                        <Image url="@png-user-icon-icons-logos-emojis-users-2400.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="72.0" layoutY="138.0" style="-fx-background-color: transparent;" text="Welcome" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="20.0" layoutY="173.0" prefHeight="27.0" prefWidth="204.0" style="-fx-background-color: transparent;" text="Admin" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="Homebutton" layoutX="34.0" layoutY="227.0" mnemonicParsing="false" onAction="#HomeAction" prefHeight="43.0" prefWidth="175.0" style="-fx-background-color: transparent; -fx-border-color: WHITE; -fx-border-width: 0px 0px 3px 0px;" text="Home" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="43.0" fitWidth="34.0" layoutX="28.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-home-64.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="autrebutton" layoutX="34.0" layoutY="321.0" mnemonicParsing="false" onAction="#AutreAction" prefHeight="45.0" prefWidth="175.0" style="-fx-background-color: transparent; -fx-border-color: WHITE; -fx-border-width: 0px 0px 3px 0px;" text="Autre" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="35.0" fitWidth="41.0" layoutX="26.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-view-more-64.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnAbout" layoutX="34.0" layoutY="411.0" mnemonicParsing="false" onAction="#actionAbout" prefHeight="45.0" prefWidth="175.0" style="-fx-background-color: transparent; -fx-border-color: WHITE; -fx-border-width: 0px 0px 3px 0px;" text="About" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="28.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-about-100.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Cancelfixed" fitHeight="40.0" fitWidth="33.0" layoutX="27.0" layoutY="582.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-sign-out-64.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="75.0" layoutY="589.0" text="Sign Out" textFill="WHITE" />
+                  <Button fx:id="SignFixed" layoutX="18.0" layoutY="578.0" mnemonicParsing="false" onAction="#CancelAction" prefHeight="40.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+                  <Button fx:id="btn_ajout" layoutX="53.0" layoutY="527.0" mnemonicParsing="false" onAction="#ajouter_admin" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 3px 0px;" text="Ajouter_Admin" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="14.0" prefHeight="200.0" prefWidth="998.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 0;">
+                     <children>
+                        <AnchorPane layoutX="743.0" layoutY="20.0" prefHeight="161.0" prefWidth="204.0" style="-fx-border-color: black; -fx-border-radius: 20; -fx-background-radius: 20;" styleClass="left_kk" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="54.0" fitWidth="63.0" layoutX="14.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons8-data-protection-100.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="id4" layoutX="111.0" layoutY="14.0" text="0,00" textFill="WHITE">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="90.0" text="la somme des montants" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="508.0" layoutY="21.0" prefHeight="157.0" prefWidth="201.0" style="-fx-border-color: black; -fx-border-radius: 20; -fx-background-radius: 20;" styleClass="left_kk" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="14.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons8-add-shopping-cart-64.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="id3" layoutX="114.0" layoutY="14.0" text="0,00" textFill="WHITE">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="41.0" layoutY="88.0" text="Total commandes" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="265.0" layoutY="22.0" prefHeight="158.0" prefWidth="211.0" style="-fx-border-color: black; -fx-border-radius: 20; -fx-background-radius: 20;" styleClass="left_kk" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="54.0" fitWidth="63.0" layoutX="14.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons8-open-box-100.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="id2" layoutX="117.0" layoutY="14.0" text="0,00" textFill="WHITE">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="53.0" layoutY="88.0" text="Total Produits" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="14.0" layoutY="22.0" prefHeight="157.0" prefWidth="213.0" style="-fx-border-radius: 20; -fx-border-color: black; -fx-background-radius: 20;" styleClass="left_kk" stylesheets="@style.css">
+                           <children>
+                              <Label fx:id="id1" layoutX="109.0" layoutY="14.0" text="0,00" textFill="WHITE">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="66.0" layoutY="87.0" text="Total Client" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="56.0" fitWidth="61.0" layoutX="15.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons8-badge-100.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </Pane>
+                  <AreaChart fx:id="courbe" layoutX="504.0" layoutY="226.0" prefHeight="367.0" prefWidth="503.0" style="-fx-border-color: black;" title="Income chart data">
+                     <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis prefHeight="287.0" prefWidth="20.0" side="LEFT" />
+                     </yAxis>
+                  </AreaChart>
+                  <AnchorPane fx:id="mainForm" layoutX="17.0" layoutY="227.0" prefHeight="367.0" prefWidth="457.0" style="-fx-border-color: black;">
+                     <children>
+                        <BarChart fx:id="batChart" layoutX="4.666666666666667" layoutY="3.333333333333333" prefHeight="360.0" prefWidth="435.0" title="Revenu Annuel" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="2.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

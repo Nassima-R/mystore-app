@@ -1,0 +1,19 @@
+/* styles.css */
+.highlighted-row {
+    -fx-background-color: yellow;
+}
+.left_from {
+  -fx-background-color: #35495E;
+
+}
+.left_left {
+-fx-background-color: #5f758d;
+
+}
+.left_kk {
+-fx-background-color:linear-gradient(to right,#395886,#628ECB);
+}
+.left_uu {
+-fx-background-color: #5f758d;
+-fx-color:#5f758d;
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="598.0" prefWidth="1027.0" style="-fx-color: #d5deef;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proj.projetjava.Produit_commandeController">
+    <children>
+        <Label layoutX="146.0" layoutY="14.0" prefHeight="35.0" prefWidth="504.0" text="Rechercher les produits de chaque commande" textFill="#53678d">
+            <font>
+                <Font name="Arial" size="24.0" />
+            </font>
+        </Label>
+        <VBox layoutX="202.0" layoutY="109.0" prefHeight="109.0" prefWidth="312.0" spacing="10.0" style="-fx-border-color: #120e44; -fx-border-radius: 10; -fx-border-width: 5px 5px 5px 5px;">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID de la commande :" textAlignment="CENTER" wrappingWidth="210.1953125">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="tfnumerocommande" prefHeight="25.0" prefWidth="40.0" />
+            </children>
+        </VBox>
+        <TableView fx:id="table_rechercherproduit" layoutX="129.0" layoutY="258.0" prefHeight="319.0" prefWidth="661.0" style="-fx-border-color: #891F34;">
+            <columns>
+                <TableColumn fx:id="colnomproduit" prefWidth="356.6666564941406" text="Nom Produit" />
+                <TableColumn fx:id="colnumeroproduit" prefWidth="302.66667683919275" text="ID Produit" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnrechercher" layoutX="600.0" layoutY="128.0" mnemonicParsing="false" onMouseClicked="#rechercherlesproduits" prefHeight="52.0" prefWidth="99.0" styleClass="left_uu" stylesheets="@style.css" text="Rechercher" textFill="WHITE" />
+      <ImageView fitHeight="119.0" fitWidth="99.0" layoutX="27.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-edit-online-order-100.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="689.0" prefWidth="2008.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proj.projetjava.HomeController">
+   <children>
+      <BorderPane layoutX="83.0" layoutY="43.333333333333336" prefHeight="694.0" prefWidth="2008.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="646.0" prefWidth="1905.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="1.0" layoutY="-1.0" prefHeight="645.0" prefWidth="417.0">
+                     <children>
+                        <AnchorPane layoutY="6.0" prefHeight="645.0" prefWidth="179.0" style="-fx-background-color: #ffb705;" styleClass="-">
+                           <children>
+                              <ImageView fitHeight="132.0" fitWidth="171.0" layoutX="32.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: #ffb705;">
+                                 <image>
+                                    <Image url="@../../../image/admin-logo-icon-17.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="57.0" layoutY="138.0" style="-fx-background-color: transparent;" text="Welcome">
+                                 <font>
+                                    <Font name="Book Antiqua Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="-4.0" layoutY="174.0" prefHeight="27.0" prefWidth="204.0" style="-fx-background-color: transparent;" text="Horizon">
+                                 <font>
+                                    <Font name="Book Antiqua Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="89.99998474121094" endY="1.52587890625E-5" layoutX="84.0" layoutY="200.0" startX="-51.83332061767578" startY="1.52587890625E-5" strokeWidth="3.0" />
+                              <Button fx:id="Homebutton" layoutX="17.0" layoutY="227.0" mnemonicParsing="false" onAction="#HomeAction" prefHeight="43.0" prefWidth="175.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 3px 0px;" text="Home" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="39.0" fitWidth="26.0" layoutX="31.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../image/home_icon-icons.com_73532.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="autrebutton" layoutX="10.0" layoutY="321.0" mnemonicParsing="false" onAction="#AutreAction" prefHeight="45.0" prefWidth="175.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 3px 0px;" text="Autre" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="30.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../image/1491254405-plusaddmoredetail_82972.png" />
+                                 </image>
+                              </ImageView>
+                              <Button layoutX="11.0" layoutY="411.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="175.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 3px 0px;" text="About" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="28.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../image/about_3697.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="40.0" fitWidth="33.0" layoutX="14.0" layoutY="528.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../image/out_sign_icon_195549.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="63.0" layoutY="536.0" text="Layout" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <BorderPane fx:id="mainPane" layoutX="304.0" prefHeight="643.0" prefWidth="1603.0">
+                     <top>
+                        <BorderPane prefHeight="129.0" prefWidth="1167.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+                           <center>
+                              <AnchorPane prefHeight="153.0" prefWidth="1316.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <AnchorPane layoutX="118.0" layoutY="18.0" prefHeight="127.0" prefWidth="106.0" />
+                                    <AnchorPane layoutX="244.0" layoutY="12.0" prefHeight="130.0" prefWidth="216.0" style="-fx-background-radius: 5px; -fx-border-radius: 5px; -fx-background-color: black;">
+                                       <children>
+                                          <Label layoutX="96.0" layoutY="85.0" text="Total client" textFill="WHITE">
+                                             <font>
+                                                <Font name="Book Antiqua Italic" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="110.0" layoutY="14.0" prefHeight="25.0" prefWidth="113.0" text="                        0" textFill="WHITE">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="487.0" layoutY="11.0" prefHeight="130.0" prefWidth="216.0" style="-fx-background-radius: 5px; -fx-border-radius: 5px; -fx-background-color: black;" />
+                                    <AnchorPane layoutX="720.0" layoutY="8.0" prefHeight="130.0" prefWidth="216.0" style="-fx-background-radius: 5px; -fx-border-radius: 5px; -fx-background-color: black;" />
+                                    <AnchorPane layoutX="9.0" layoutY="11.0" prefHeight="130.0" prefWidth="216.0" style="-fx-background-radius: 5px; -fx-border-radius: 5px; -fx-background-color: black; -fx-border-color: blue;">
+                                       <children>
+                                          <ImageView fitHeight="57.0" fitWidth="95.0" layoutX="8.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../image/users_theuser_6177.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="95.0" layoutY="81.0" text="Total client" textFill="WHITE">
+                                             <font>
+                                                <Font name="Book Antiqua Italic" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="101.0" layoutY="6.0" prefHeight="25.0" prefWidth="113.0" text="                        0" textFill="WHITE">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="57.0" fitWidth="95.0" layoutX="18.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../image/users_theuser_6177.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </center>
+                        </BorderPane>
+                     </top>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

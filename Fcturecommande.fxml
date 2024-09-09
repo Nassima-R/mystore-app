@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="661.0" prefWidth="998.0" style="-fx-color: #d5deef;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proj.projetjava.FacturecommandeController">
+   <children>
+      <TableView fx:id="tablerecherchefacture" layoutX="157.0" layoutY="236.0" prefHeight="311.0" prefWidth="645.0" style="-fx-border-color: #ae0a0a;">
+        <columns>
+          <TableColumn fx:id="colnumerofacture" prefWidth="260.0000305175781" text="numerofacture" />
+          <TableColumn fx:id="coldatefacture" prefWidth="195.99996948242188" text="datefacture" />
+            <TableColumn fx:id="colmontant" prefWidth="187.99993896484375" text="montant" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnrechercher" layoutX="540.0" layoutY="110.0" mnemonicParsing="false" onAction="#rechercherfacture" prefHeight="51.0" prefWidth="91.0" style="-fx-border-radius: 30; -fx-backround-radius: 30;" styleClass="left_uu" stylesheets="@style.css" text="Rechercher" textFill="WHITE" />
+      <VBox layoutX="174.0" layoutY="89.0" prefHeight="93.0" prefWidth="235.0" style="-fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #120e44; -fx-border-width: 5px 5px 5px 5px;">
+         <children>
+            <Label text="numerocommande">
+               <font>
+                  <Font name="Book Antiqua Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfnumerocommande" />
+         </children>
+      </VBox>
+      <Label layoutX="275.0" layoutY="28.0" prefHeight="35.0" prefWidth="498.0" text="Rechercher les factures de chaque commande" textFill="#46587b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="113.0" fitWidth="102.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-bookmark-50.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="712.0" prefWidth="1120.0" style="-fx-color: #d5deef;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proj.projetjava.produitlivraisoncontroller">
+    <children>
+        <VBox layoutX="163.0" layoutY="119.0" prefHeight="99.0" prefWidth="323.0" spacing="10.0" style="-fx-border-color: #120e44; -fx-border-width: 5px 5px 5px 5px; -fx-border-radius: 10px;">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Numéro Produit :" textAlignment="CENTER" wrappingWidth="168.6015396118164">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="tfnumeroproduit" />
+            </children>
+        </VBox>
+        <Button fx:id="btnchercher" layoutX="560.0" layoutY="148.0" mnemonicParsing="false" onMouseClicked="#chercherproduits" prefHeight="55.0" prefWidth="117.0" styleClass="left_uu" stylesheets="@style.css" text="Chercher" textFill="#f8f8f8" />
+        <TableView fx:id="table_produitlivraison" layoutX="169.0" layoutY="282.0" prefHeight="258.0" prefWidth="553.0">
+            <columns>
+                <TableColumn fx:id="colnom" prefWidth="274.66664123535156" text="Nom Produit" />
+                <TableColumn fx:id="coldate" prefWidth="277.3334045410156" text="Date Livraison" />
+            </columns>
+        </TableView>
+        <Label layoutX="400.0" layoutY="29.0" prefHeight="36.0" prefWidth="332.0" text="Livraison de chaque Produit" textAlignment="CENTER" textFill="#7e8da8">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+      <ImageView fitHeight="133.0" fitWidth="143.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-motorcycle-delivery-single-box-100.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

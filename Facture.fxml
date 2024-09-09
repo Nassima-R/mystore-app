@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="542.0" prefWidth="1221.0" style="-fx-color: #d5deef;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proj.projetjava.FactureController">
+    <children>
+        <TableView fx:id="tableFacture" layoutX="336.0" layoutY="51.0" onMouseClicked="#getDatafacture" prefHeight="456.0" prefWidth="661.0" style="-fx-border-color: #120E44;" stylesheets="@style.css">
+            <columns>
+                <TableColumn fx:id="colnumerofacture" prefWidth="190.6666259765625" text="Numero Facture" />
+                <TableColumn fx:id="coldatefacture" prefWidth="176.00006103515625" text="Date Facture" />
+                <TableColumn fx:id="colmontant" minWidth="0.0" prefWidth="127.33331298828125" text="Montant" />
+            <TableColumn fx:id="colnumerocommande" prefWidth="164.6666259765625" text="Numero Commande" />
+            </columns>
+        </TableView>
+        <ButtonBar layoutX="-240.0" layoutY="449.0" prefHeight="40.0" prefWidth="507.0" />
+      <Pane layoutX="17.0" layoutY="4.0" prefHeight="419.0" prefWidth="282.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #120E44; -fx-border-width: 5px 5px 5px 5px;">
+         <children>
+            <Text fill="#120e44" layoutX="12.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="numerofacture">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfnumerofacture" layoutX="19.0" layoutY="178.0" prefHeight="32.0" prefWidth="233.0" />
+            <Text fill="#120e44" layoutX="12.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="datefacture">
+               <font>
+                  <Font name="Book Antiqua Italic" size="14.0" />
+               </font>
+            </Text>
+             <DatePicker fx:id="dpDateFacture" layoutX="20.0" layoutY="247.0" prefHeight="32.0" prefWidth="233.0" />
+            <TextField fx:id="tfmontant" layoutX="20.0" layoutY="305.0" prefHeight="32.0" prefWidth="233.0" />
+             <ComboBox fx:id="cmbNumerocommande" layoutX="22.0" layoutY="358.0" prefHeight="33.0" prefWidth="233.0" />
+            <Text fill="#120e44" layoutX="12.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="montant">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#120e44" layoutX="16.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="numerocommande">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="71.0" fitWidth="53.0" layoutX="115.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/6615971-84.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+          <Button fx:id="btnenregistrerFacture" layoutX="42.0" layoutY="489.0" mnemonicParsing="false" onMouseClicked="#enregistrerfacture" prefHeight="40.0" prefWidth="81.0" styleClass="left_uu" stylesheets="@style.css" text="Enregistrer" textFill="WHITE" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+
+                <Button fx:id="btnrechercherfacture" layoutX="169.0" layoutY="489.0" mnemonicParsing="false" onMouseClicked="#rechercherfacture" prefHeight="40.0" prefWidth="81.0" styleClass="left_uu" stylesheets="@style.css" text="Rechercher" textFill="WHITE" />
+          <Button fx:id="btnsupprimerFacture" layoutX="42.0" layoutY="429.0" mnemonicParsing="false" onMouseClicked="#supprimerfacture" prefHeight="40.0" prefWidth="81.0" styleClass="left_uu" stylesheets="@style.css" text="Supprimer" textFill="WHITE" />
+          <Button fx:id="btnmodifierFacture" layoutX="169.0" layoutY="429.0" mnemonicParsing="false" onMouseClicked="#modifierfacture" prefHeight="40.0" prefWidth="81.0" styleClass="left_uu" stylesheets="@style.css" text="Modifier" textFill="WHITE" />
+
+
+    </children>
+</AnchorPane>

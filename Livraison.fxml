@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="629.0" prefWidth="1145.0" style="-fx-color: #d5deef;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proj.projetjava.LivraisonController">
+    <children>
+        <ButtonBar layoutX="292.0" layoutY="547.0" prefHeight="82.0" prefWidth="350.0" />
+      <Pane layoutX="8.0" layoutY="12.0" prefHeight="409.0" prefWidth="283.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-border-color: #120e44; -fx-border-width: 5px 5px 5px 5px;">
+         <children>
+            <Label layoutX="14.0" layoutY="207.0" text="numerolivraison" textFill="#120e44">
+               <font>
+                  <Font name="Book Antiqua Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="259.0" text="datelivraison" textFill="#120e44">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="311.0" text="numerocommande" textFill="#120e44">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfnumerolivraison" layoutX="21.0" layoutY="227.0" prefHeight="25.0" prefWidth="218.0" />
+             <DatePicker fx:id="tfdatelivraison" layoutX="21.0" layoutY="279.0" prefHeight="25.0" prefWidth="218.0" />
+
+             <ComboBox fx:id="cmbNumerocommande" layoutX="23.0" layoutY="331.0" prefHeight="25.0" prefWidth="218.0" />
+
+             <ImageView fitHeight="82.0" fitWidth="109.0" layoutX="91.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/commerce_online_buy_store_business_box_product_item_icon_219867.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TableView fx:id="tableLivraison" layoutX="301.0" layoutY="47.0" onMouseClicked="#getDatalivraison" prefHeight="455.0" prefWidth="683.0">
+        <columns>
+          <TableColumn fx:id="colnumerolivrason" prefWidth="226.00006103515625" text="numerolivraison" />
+          <TableColumn fx:id="coldatelivraison" prefWidth="233.33331298828125" text="datelivraison" />
+            <TableColumn fx:id="colnumerocommande" prefWidth="222.00006103515625" text="numerocommande" />
+        </columns>
+      </TableView>
+          <Button fx:id="btnEnregistrerL" layoutX="160.0" layoutY="426.0" mnemonicParsing="false" onAction="#enregistrerlivraison" prefHeight="38.0" prefWidth="73.0" styleClass="left_uu" stylesheets="@style.css" text="Enregistrer" textFill="WHITE" />
+          <Button fx:id="btnsupprimerL" layoutX="48.0" layoutY="483.0" mnemonicParsing="false" onAction="#supprimerlivraison" prefHeight="38.0" prefWidth="78.0" styleClass="left_uu" stylesheets="@style.css" text="Supprimer" textFill="WHITE" />
+          <Button fx:id="btnmodifierL" layoutX="160.0" layoutY="483.0" mnemonicParsing="false" onAction="#modifierlivraison" prefHeight="38.0" prefWidth="73.0" styleClass="left_uu" stylesheets="@style.css" text="Modifier" textFill="WHITE" />
+      <Button fx:id="btnrechercher" layoutX="48.0" layoutY="426.0" mnemonicParsing="false" onAction="#rechercherlivraison" prefHeight="38.0" prefWidth="78.0" styleClass="left_uu" stylesheets="@style.css" text="Rechercher" textFill="WHITE" />
+    </children>
+</AnchorPane>
